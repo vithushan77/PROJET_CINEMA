@@ -14,17 +14,17 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="about.php">About</a></li>
+                <li class="active"><a href="index.php">Accueil</a></li>
+                <li><a href="about.php">Réservation</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="sidebar-left.php">Left Sidebar</a></li>
-                        <li class="active"><a href="sidebar-right.php">Right Sidebar</a></li>
+                        <li><a href="sidebar-left.php">A l'affiche</a></li>
+                        <li class="active"><a href="sidebar-right.php">Prochainement</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a class="btn" href="signin.php">SIGN IN / SIGN UP</a></li>
+                <li><a class="btn" href="signin.php">Connexion/Inscription</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
