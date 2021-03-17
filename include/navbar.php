@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start(); ?>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -24,7 +25,18 @@
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a class="btn" href="signin.php">Connexion/Inscription</a></li>
+                <?php if(empty($_SESSION))
+               {?>
+                <li><a class="btn" href="signin.php">Connexion / Inscription</a></li>
+
+                <?php } if (isset($_SESSION['mail'])) {
+                        ?>
+                        <li><a class="btn" href="#">Mon compte</a></li>
+                        <li><a class="btn" href="include/deconnexion.php">Déconnexion</a></li>
+
+                    <?php } ;?>
+
+
             </ul>
         </div><!--/.nav-collapse -->
     </div>

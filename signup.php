@@ -27,8 +27,8 @@
 
 <body>
 	<!-- Fixed navbar -->
-    <?php include 'navbar.php'; ?>
-	<!-- /.navbar -->
+    <?php include './include/navbar.php'; ?>
+    <!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
 
@@ -55,7 +55,7 @@
 							<p class="text-center text-muted">Si vous avez deja un compte , <a href="signin.php">Connectez vous</a>. </p>
 							<hr>
 
-							<form method="POST" action="">
+							<form method="POST" action="./Traitement/traitementinscription.php">
 								<div class="top-margin">
 									<label>Nom</label>
 									<input type="text" name="nom" class="form-control">

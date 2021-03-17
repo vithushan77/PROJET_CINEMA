@@ -27,7 +27,7 @@
 
 <body>
 	<!-- Fixed navbar -->
-    <?php include 'navbar.php'; ?>
+    <?php include './include/navbar.php'; ?>
 	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>

@@ -27,14 +27,14 @@
 
 <body class="home">
 	<!-- Fixed navbar -->
-    <?php include 'navbar.php'; ?>
+    <?php include 'include/navbar.php'; ?>
 	<!-- /.navbar -->
 
 	<!-- Header -->
 	<header id="head">
 		<div class="container">
 			<div class="row">
-				<h1 class="lead">Bienvenu</h1>
+				<h1 class="lead">Bienvenue</h1>
 				<p class="tagline"> <a GetTemplate</a></p>
 			</div>
 		</div>

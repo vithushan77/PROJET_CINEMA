@@ -7,7 +7,7 @@ class bdd{
     public function __construct()
     {
         try {
-            $this->bdd = new PDO('mysql:host=localhost;dbname=;charset=utf8', 'root', '');
+            $this->bdd = new PDO('mysql:host=localhost;dbname=cinemav;charset=utf8', 'root', '');
         }
         catch(Exception $e){
             die('Erreur : '.$e->getMessage());

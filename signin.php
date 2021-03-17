@@ -27,8 +27,7 @@
 
 <body>
 	<!-- Fixed navbar -->
-    <?php include 'navbar.php'; ?>
-	<!-- /.navbar -->
+    <?php include './include/navbar.php'; ?>	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
 
@@ -55,7 +54,7 @@
 							<p class="text-center text-muted">Si vous etes nouveau, <a href="signup.php">Inscrivez-vous</a> </p>
 							<hr>
 							
-							<form method="post" action="">
+							<form method="post" action="./Traitement/traitementconnexion.php">
 								<div class="top-margin">
 									<label>Email <span class="text-danger">*</span></label>
 									<input type="text" name="mail" class="form-control">
