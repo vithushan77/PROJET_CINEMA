@@ -31,7 +31,7 @@
 
                 <?php } if (isset($_SESSION['mail'])) {
                         ?>
-                        <li><a class="btn" href="#">Mon compte</a></li>
+                        <li><a class="btn" href="profile.php">Mon compte</a></li>
                         <li><a class="btn" href="include/deconnexion.php">Déconnexion</a></li>
 
                     <?php } ;?>
