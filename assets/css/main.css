@@ -79,4 +79,22 @@ img.pull-left { margin-right: 10px; }
 		.footer2 p { margin: 0; }
 
 	.widget-simplenav { margin-left:-5px; }		
-	.widget-simplenav a{ margin:0 5px; }		
+	.widget-simplenav a{ margin:0 5px; }
+
+.widget.user {
+	padding-top: 50px;
+}
+
+.widget.user .image img {
+	width: 157px;
+	height: 233px;
+	border-radius: 100%;
+	border: 7px solid #dedede;
+}
+
+.widget.user h5 {
+	font-size: 20px;
+	margin-top: 23px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}

@@ -49,8 +49,8 @@
                             <li>
                                 <a href="./include/deconnexion.php"><i class="fa fa-cog"></i> Deconnexion</a>
                             </li>
-                            <li> <form method="post" action="./Traitement/traitementmodifier.php">
-                                <a href="Traitement/traitementsupprimer.php" data-toggle="modal" data-target="#deleteaccount"><i class="fa fa-power-off"></i>Modifier</a>
+                            <li> <form method="post" action="./Traitement/traitementsupprimer.php">
+                                    <a href="Traitement/traitementsupprimer.php" data-toggle="modal" data-target="#deleteaccount"><i class="fa fa-power-off"></i>Supprimer le compte</a>
                                 </form>
                             </li>
                         </ul>

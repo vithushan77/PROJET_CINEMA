@@ -1,6 +1,6 @@
 <?php
 require_once '../Model/user.php';
-require_once '../Manager/inscriptionbdd.php';
+require_once '../Manager/manager.php';
 
 $user = new user(array(
     'nom' => $_POST['nom'],
@@ -10,5 +10,5 @@ $user = new user(array(
     'mail' => $_POST['mail']
 
 ));
-$man = new inscriptionbdd($user);
+$man = new manager($user);
 $man->Inscription($user);

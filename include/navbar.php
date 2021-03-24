@@ -30,11 +30,16 @@
                 <li><a class="btn" href="signin.php">Connexion / Inscription</a></li>
 
                 <?php } if (isset($_SESSION['mail'])) {
-                        ?>
+                if ($_SESSION['role'] == "1"){?>
+
+                    <li><a class="btn" href="profiladmin.php">Compte admin</a></li>
+                    <li><a class="btn" href="include/deconnexion.php">Déconnexion</a></li>
+                <?php }else { ;?>
+
                         <li><a class="btn" href="profile.php">Mon compte</a></li>
                         <li><a class="btn" href="include/deconnexion.php">Déconnexion</a></li>
 
-                    <?php } ;?>
+                    <?php }} ;?>
 
 
             </ul>
