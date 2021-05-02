@@ -20,9 +20,9 @@
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -55,7 +55,7 @@
 							<p class="text-center text-muted">Si vous avez deja un compte , <a href="signin.php">Connectez vous</a>. </p>
 							<hr>
 
-							<form method="POST" action="./Traitement/traitementinscription.php">
+							<form method="POST" action="Traitement/traitementinscription.php">
 								<div class="top-margin">
 									<label>Nom</label>
 									<input type="text" name="nom" class="form-control">

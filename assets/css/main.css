@@ -98,3 +98,17 @@ img.pull-left { margin-right: 10px; }
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+#test{
+	margin-left: auto;
+	margin-right: auto;
+	width: 10em
+}
+
+.view{
+
+}
+#joker{
+	margin-left: auto;
+	margin-right: auto;
+	width: 17em
+}

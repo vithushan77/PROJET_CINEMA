@@ -20,9 +20,9 @@
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -31,68 +31,68 @@
 	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
+    <div class="container">
 
-	<!-- container -->
-	<div class="container">
-		
-		<ol class="breadcrumb">
-			<li><a href="index.php">Home</a></li>
-			<li class="active">Left Sidebar</li>
-		</ol>
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a></li>
+            <li class="active">Affiche</li>
+        </ol>
 
-		<div class="row">
-			
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-left">
+        <div class="row">
 
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, ratione delectus reiciendis nulla nisi pariatur molestias animi eos repellat? Vel.</p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p><img src="assets/images/1.jpg" alt=""></p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p><img src="assets/images/2.jpg" alt=""></p>
-						<p>Qui, debitis, ad, neque reprehenderit laborum soluta dolor voluptate eligendi enim consequuntur eveniet recusandae rerum? Atque eos corporis provident tenetur.</p>
-					</div>
-				</div>
+            <h1 style="link:main.css" id="test">Les Films à L'affiche</h1>
 
-			</aside>
-			<!-- /Sidebar -->
+            <!-- Sidebar -->
+            <aside class="sidebar sidebar-left">
 
-			<!-- Article main content -->
-			<article class="col-md-8 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">Lorem ipsum dolor sit amet, consectetur.</h1>
-				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, itaque, cumque, maxime obcaecati reprehenderit ea dignissimos amet voluptatem id excepturi facilis totam veritatis maiores eveniet neque explicabo temporibus quisquam in ex ab fugiat ipsa tempore sunt corporis nostrum quam illum!</p>
-				<p>Consectetur cupiditate labore repudiandae beatae nisi fugiat facilis natus illum vitae doloremque. In, perspiciatis, natus, impedit voluptas itaque odio repudiandae placeat nisi totam repellendus earum dolores mollitia tempore quasi beatae alias cum dicta maxime laborum corporis harum porro magnam laboriosam.</p>
-				<p>Aut, eaque, minus atque alias odio mollitia cum nisi ipsa nulla natus quae minima similique ipsam aspernatur molestias animi in deleniti nam. Tempora, labore, modi eum perspiciatis doloremque sequi nam illo corporis iusto maiores nisi recusandae repellat animi reiciendis accusamus.</p>
+                <div class="card">
+                    <div class="card-body col-md-4">
+                        <h5 class="card-title"><strong>Avengers</strong></h5>
+                        <img src="assets/images/avengers.jpg" class="card-img-top" alt="...">
+                        <a href="avengers.php" class="btn btn-primary">Voir le film</a>
+                    </div>
+                    <div class="card-body col-md-4">
+                        <h5 class="card-title"><strong>Joker</strong></h5>
+                        <img src="assets/images/joker.jpg" class="card-img-top" alt="...">
+                        <a href="joker.php" class="btn btn-primary">Voir le film</a>
+                    </div>
+                    <div class="card-body col-md-4">
+                        <h5 class="card-title"><strong>Thor Ragnorak</strong></h5>
+                        <img src="assets/images/thor.jpg" class="card-img-top" alt="...">
+                        <a href="thor.php" class="btn btn-primary">Voir le film</a>
+                    </div>
+                    <div class="card-body col-md-4">
+                        <img src="assets/images/naruto.png" class="card-img-top" alt="...">
+                        <h5 class="card-title"><strong>Naruto The Last</strong></h5>
+                        <a href="naruto.php" class="btn btn-primary">Voir le film</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-body col-md-4">
+                            <img src="assets/images/broly.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title"><strong>Dragon ball super Broly</strong></h5>
+                            <a href="broly.php" class="btn btn-primary">Voir le film</a>
+                        </div>
+                        <div class="card-body col-md-4">
+                            <img src="assets/images/onepiece.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title"><strong>One piece Stamped</strong></h5>
+                            <a href="luffy.php" class="btn btn-primary">Voir le film</a>
+                        </div>
+                </div>
 
-				<h2>A, quibusdam, nobis, eveniet consequatur</h2>
-				<p>A, quibusdam, nobis, eveniet consequatur alias doloremque officia blanditiis fuga et numquam labore reiciendis voluptas quis repellat quos sunt non dolore consectetur at sit nam tenetur dolorem? Harum, quas, sit perspiciatis esse odit temporibus aperiam nulla aspernatur sequi fugiat tempore?</p>
-				<p>Ad velit consequuntur quo qui odit quam sapiente repudiandae et ea pariatur? Ex sapiente beatae nobis consectetur ea. Deleniti, beatae, magnam, dolorum, fuga nostrum quas laboriosam sapiente temporibus enim voluptates ullam impedit atque quae provident quos mollitia aperiam perferendis amet.</p>
 
-				<blockquote>Numquam, ut iure quia facere totam quas odit illo incidunt. Voluptatem, nostrum, ex, quasi incidunt similique cum maxime expedita unde labore inventore excepturi veniam corporis sequi facere ullam voluptates amet illum quam fuga voluptatibus ipsum atque sunt eos. Ut, necessitatibus.</blockquote>
-				<p>Odit, laudantium, dolores, natus distinctio labore voluptates in inventore quasi qui nobis quis adipisci fugit id! Aliquam alias ea modi. Porro, odio, sed veniam hic numquam qui ad molestiae sint placeat expedita? Perferendis, enim qui numquam sequi obcaecati molestiae fugiat!</p>
-				<p>Aperiam, odit, quasi, voluptate fugiat quisquam velit magni provident corporis animi facilis illo eveniet eum obcaecati adipisci blanditiis quas labore doloribus eos veniam repudiandae suscipit tempora ad harum odio eius distinctio hic deleniti. Sunt fuga ad perspiciatis repellat deleniti omnis!</p>
+            </aside>
+            <!-- /Sidebar -->
 
-				<h3>Numquam, ut iure quia facere totam quas odit illo incidunt</h3>
-				<p>Est, maiores, fuga sed nemo qui veritatis ducimus placeat odit quisquam dolorum. Rem, sunt, praesentium veniam maiores quia molestias eos fugit eaque ducimus veritatis provident assumenda. Quia, fuga, voluptates voluptatibus quis enim nam asperiores aliquam dignissimos ullam recusandae debitis iste.</p>
-				<p>Dignissimos, beatae, praesentium illum eos autem perspiciatis? Minus, non, tempore, illo, mollitia exercitationem tempora quas harum odio dolores delectus quidem laudantium adipisci ducimus ullam placeat eaque minima quae iure itaque corporis magni nesciunt eius sed dolor doloremque id quasi nisi.</p>
-			</article>
-			<!-- /Article -->
+            <!-- Article main content -->
 
-		</div>
-	</div>	<!-- /container -->
+            <!-- /Article -->
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>		<!-- /container -->
 
 
     <footer id="footer" class="top-space">

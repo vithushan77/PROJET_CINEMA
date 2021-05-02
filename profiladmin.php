@@ -25,7 +25,7 @@
     <![endif]-->
 </head>
 <body>
-<?php include 'include/navbar.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 
 <section class="user-profile section">
@@ -37,7 +37,7 @@
                     <div class="widget user">
                         <!-- User Image -->
                         <div class="image d-flex justify-content-center">
-                            <img src="./assets/images/will1.jpg" alt="" class="">
+                            <img src="assets/images/will1.jpg" alt="" class="">
                         </div>
                         <!-- User Name -->
                         <h5 class="text-left"><?php echo $_SESSION["mail"]?></h5>
@@ -47,9 +47,9 @@
                     <div class="widget user-dashboard-menu">
                         <ul>
                             <li>
-                                <a href="./include/deconnexion.php"><i class="fa fa-cog"></i> Deconnexion</a>
+                                <a href="include/deconnexion.php"><i class="fa fa-cog"></i> Deconnexion</a>
                             </li>
-                            <li> <form method="post" action="./Traitement/traitementsupprimer.php">
+                            <li> <form method="post" action="Traitement/traitementsupprimer.php">
                                     <a href="Traitement/traitementsupprimer.php" data-toggle="modal" data-target="#deleteaccount"><i class="fa fa-power-off"></i>Supprimer le compte</a>
                                 </form>
                             </li>

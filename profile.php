@@ -25,7 +25,7 @@
     <![endif]-->
 </head>
 <body>
-<?php include 'include/navbar.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 
 <section class="user-profile section">
@@ -37,8 +37,37 @@
                     <div class="widget user">
                         <!-- User Image -->
                         <div class="image d-flex justify-content-center">
-                            <img src="./assets/images/will1.jpg" alt="" class="">
+                            <img src="assets/images/will1.jpg" alt="" class="">
                         </div>
+                            <div class="col-sm-6">
+                                <label>Changez votre Nom<span class="text-danger">*</span></label>
+                                <input type="password" name=changeprenom class="form-control">
+                            </div>
+                        <div class="col-sm-6">
+                            <label>Changez votre Prenom<span class="text-danger">*</span></label>
+                            <input type="password" name="changeprenom" class="form-control">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label>Changez votre age<span class="text-danger">*</span></label>
+                            <input type="password" name="changeage" class="form-control">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label>Changez votre mail<span class="text-danger">*</span></label>
+                            <input type="password" name="changemail" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Changez votre mdp<span class="text-danger">*</span></label>
+                            <input type="password" name="changemdp" class="form-control">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label>Changez votre Nom<span class="text-danger">*</span></label>
+                            <input type="password" name="nom" class="form-control">
+                        </div>
+
+
                         <!-- User Name -->
                         <h5 class="text-left"><?php echo $_SESSION["mail"]?></h5>
 
@@ -47,7 +76,7 @@
                     <div class="widget user-dashboard-menu">
                         <ul>
                             <li>
-                                <a href="./include/deconnexion.php"><i class="fa fa-cog"></i> Deconnexion</a>
+                                <a href="include/deconnexion.php"><i class="fa fa-cog"></i> Deconnexion</a>
                             </li>
                             <li> <form method="post" action="./Traitement/traitementmodifier.php">
                                 <a href="Traitement/traitementsupprimer.php" data-toggle="modal" data-target="#deleteaccount"><i class="fa fa-power-off"></i>Modifier</a>
@@ -56,5 +85,10 @@
                         </ul>
                     </div>
 
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+                    <script src="assets/js/headroom.min.js"></script>
+                    <script src="assets/js/jQuery.headroom.min.js"></script>
+                    <script src="assets/js/template.js"></script>
 </body>
 </html>
