@@ -104,11 +104,32 @@ img.pull-left { margin-right: 10px; }
 	width: 10em
 }
 
-.view{
+
+#modif{
+	display: flex;
+}
+
+#films{
+	display: flex;
+	flex-direction: column;
+}
+#images{
+	list-style: none;
 
 }
-#joker{
+#resume{
+	display: flex;
+	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
-	width: 17em
+	width: 10em
+
+}
+#synop{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10em
+
 }

@@ -19,11 +19,12 @@ class manager
         else {
             $bdd = new bdd();
             $req1 = $bdd->getStart()->prepare('INSERT INTO utilisateurs(nom, prenom, age, mdp,  mail, role) VALUES(:nom, :prenom, :age, :mdp, :mail, :role)');
+            $pass_hache = password_hash($user->getMdp(), PASSWORD_DEFAULT);
             $req1->execute(array(
                 'nom' => $user->getNom(),
                 'prenom' => $user->getPrenom(),
                 'age'=>$user->getAge(),
-                'mdp' => $user->getMdp(),
+                'mdp'=> $pass_hache,
                 'mail' => $user->getMail(),
                 'role'=>0
             ));
@@ -80,11 +81,31 @@ class manager
             header("Location: ../index.php");
         }
         else{
-            header("Location: ../about.php");
+            echo "var_dump($req)";
         }
 
     }
 
+    public function modifadmin($user){
+        $bdd = new bdd();
 
+        $req = $bdd->getStart()->prepare('UPDATE utilisateurs SET nom = :nom, prenom = :prenom, age = :age WHERE id = :id');
+        $a = $req->execute(array(
+            'nom'=>$user->getNom(),
+            'prenom'=>$user->getPrenom(),
+            'age'=>$user->getAge(),
+            'id'=>$_SESSION['id']
+            ));
+
+            if($a){
+                header("Location: ../index.php");
+            }
+            else{
+                echo 'Erreur lors de la tentative de modification';
+            }
+
+        }
+
+    }
 
 }

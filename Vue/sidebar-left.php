@@ -1,3 +1,4 @@
+<?php require_once "../Manager/managetfilm.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,23 +12,23 @@
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
 
 	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="../assets/css/main.css">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
 	<!-- Fixed navbar -->
-    <?php include './include/navbar.php'; ?>
+    <?php include '../include/navbar.php'; ?>
 	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
@@ -40,45 +41,38 @@
 
         <div class="row">
 
-            <h1 style="link:main.css" id="test">Les Films à L'affiche</h1>
+            <h1 id="test">Les Films à L'affiche</h1>
 
             <!-- Sidebar -->
             <aside class="sidebar sidebar-left">
+                <form action="reserver.php">
+                    <ul id="films">
+                <?php
+                $man = new managetfilm();
+                $film = $man->slectfilm();
 
-                <div class="card">
+                foreach($film as $value){?>
+
+
+                <div class="card" >
+
                     <div class="card-body col-md-4">
-                        <h5 class="card-title"><strong>Avengers</strong></h5>
-                        <img src="assets/images/avengers.jpg" class="card-img-top" alt="...">
-                        <a href="avengers.php" class="btn btn-primary">Voir le film</a>
+                        <div> <h5 class="card-title"><strong><?php echo $value['nom_film'];?></strong></h5>
+                        <img src="<?php echo $value['lien_Film'];?>" class="card-img-top">
+                            <input hidden value="<?php echo $value['id_film']; ?>"></div>
+                        <div>
+
+                                <h5 class="card-title"></h5><?php echo $value['resume_Film']; ?></div>
+
                     </div>
-                    <div class="card-body col-md-4">
-                        <h5 class="card-title"><strong>Joker</strong></h5>
-                        <img src="assets/images/joker.jpg" class="card-img-top" alt="...">
-                        <a href="joker.php" class="btn btn-primary">Voir le film</a>
-                    </div>
-                    <div class="card-body col-md-4">
-                        <h5 class="card-title"><strong>Thor Ragnorak</strong></h5>
-                        <img src="assets/images/thor.jpg" class="card-img-top" alt="...">
-                        <a href="thor.php" class="btn btn-primary">Voir le film</a>
-                    </div>
-                    <div class="card-body col-md-4">
-                        <img src="assets/images/naruto.png" class="card-img-top" alt="...">
-                        <h5 class="card-title"><strong>Naruto The Last</strong></h5>
-                        <a href="naruto.php" class="btn btn-primary">Voir le film</a>
-                    </div>
-                    <div class="card">
-                        <div class="card-body col-md-4">
-                            <img src="assets/images/broly.jpg" class="card-img-top" alt="...">
-                            <h5 class="card-title"><strong>Dragon ball super Broly</strong></h5>
-                            <a href="broly.php" class="btn btn-primary">Voir le film</a>
-                        </div>
-                        <div class="card-body col-md-4">
-                            <img src="assets/images/onepiece.jpg" class="card-img-top" alt="...">
-                            <h5 class="card-title"><strong>One piece Stamped</strong></h5>
-                            <a href="luffy.php" class="btn btn-primary">Voir le film</a>
-                        </div>
                 </div>
 
+</li>
+<?php }?>
+                    </ul>
+
+
+                </form>
 
             </aside>
             <!-- /Sidebar -->
@@ -140,8 +134,8 @@
     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+	<script src="../assets/js/headroom.min.js"></script>
+	<script src="../assets/js/jQuery.headroom.min.js"></script>
+	<script src="../assets/js/template.js"></script>
 </body>
 </html>
