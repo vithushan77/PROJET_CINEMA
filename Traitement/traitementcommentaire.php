@@ -1,8 +1,8 @@
 <?php
-require_once "./Manager/managetfilm.php";
+require_once "../Manager/managetfilm.php";
 require_once '../Model/modelcommentaires.php';
 
-$coments = new user(array(
+$coments = new coments(array(
     'nom' => $_POST['nom'],
     'nom_film' => $_POST['nom_film'],
     'commentaire' => $_POST['commentaire'],

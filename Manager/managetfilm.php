@@ -32,13 +32,14 @@ public function selectfilm(){
     }
     public function commentaire($coments){
         $bdd = new bdd();
-        $req = $bdd->getStart()->prepare('INSERT INTO commentaires(nom_film, nom, commentaire) VALUES(:nom_film,:nom, :commentaire');
-        $req1->execute(array(
+        $req = $bdd->getStart()->prepare('INSERT INTO commentaires(nom_film, nom, commentaire) VALUES(:nom_film, :nom, :commentaire');
+        $req1=$req->execute(array(
             'nom' => $coments->getNom(),
             'nom_film' => $coments->getNom_film(),
-            'commentaire' => $coments->getCommentaire()));
-
+            'commentaire' => $coments->getCommentaire()
+        ));
+    var_dump($coments);
+    die();
         return $req1;
-
     }
 }

@@ -15,12 +15,10 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">
                 <li class="active"><a href="index.php">Accueil</a></li>
-                <li><a href="about.php">Réservation</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="sidebar-left.php">A l'affiche</a></li>
-                        <li class="active"><a href="sidebar-right.php">Prochainement</a></li>
                     </ul>
                 </li>
                 <li><a href="../Vue/contact.php">Contact</a></li>
